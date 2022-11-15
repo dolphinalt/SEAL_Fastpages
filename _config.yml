@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: SEAL
+description: SEAL team Tri-2 group website
 github_username: dolphinalt
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "SEAL_Fastpages"
@@ -38,9 +38,21 @@ baseurl: "/SEAL_Fastpages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
+  #  social_links:
+  #    twitter: NighthawkCoding
+  #    github: nighthawkcoders
+  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
   social_links:
-    twitter: fastdotai
-    github: fastai
+    - { platform: github, user_url: ”
+https://github.com/nighthawkcoders
+“}
+    - { platform: twitter, user_url: ”
+https://twitter.com/NighthawkCoding
+“}
+    - { platform: youtube, user_url: ”
+https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
+“}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
