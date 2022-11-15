@@ -425,6 +425,67 @@ pre code { font-size: 15px !important; }
 
 .youtube-iframe-wrapper iframe, .youtube-iframe-wrapper object, .youtube-iframe-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
+h1, h2, p, h3, h4 { color: white !important; }
+
+html, input, textarea, select { color: white !important; background-color: #01001d !important; }
+
+body { color: white !important; background-color: #01001d !important; cursor: url("https://www.flaticon.com/free-icons/cursor"), auto; }
+
+button { background-color: #3f4a4f; color: white; transition: all .2s ease-in; }
+
+button:hover { background-color: #00ddff; color: #252525; }
+
+#Top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 99; font-size: 18px; border: none; outline: none; background-color: #3f4a4f; color: white; transition: all .2s ease-in; cursor: pointer; padding: 15px; width: 3rem; height: 3rem; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); transform: translateX(-50%); }
+
+#Top:hover { background-color: #00ddff; }
+
+.site-header { position: sticky; }
+
+.site-title, .site-nav, .page-link { color: rgba(0, 0, 0, 0.2) !important; background-color: black; background-color: rgba(0, 0, 0, 0.2); background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff); -webkit-background-clip: text; background-clip: text; color: transparent; animation: rainbow_animation 6s ease-in-out infinite; background-size: 400% 100%; position: sticky; }
+
+.page-link:hover { border-radius: 25px; background-color: white; transition: all .2s ease-in; }
+
+a { color: rgba(0, 0, 0, 0.2) !important; background-color: black; background-color: rgba(0, 0, 0, 0.2); background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff); -webkit-background-clip: text; background-clip: text; color: transparent; animation: rainbow_animation 6s ease-in-out infinite; background-size: 400% 100%; }
+
+a:hover { color: #00ff37 !important; text-decoration: none; }
+
+.site-nav { background-color: #01001d !important; border-color: white !important; }
+
+.page-description { color: #979797 !important; }
+
+.post-meta { color: #c9c9c9 !important; }
+
+.post-content p, .post-content li { color: #b4b4b4 !important; }
+
+btn { background-color: #0e00cc !important; color: #f0f0f0 !important; border-color: none !important; }
+
+.btn:hover { background-color: #0350e0 !important; }
+
+.post-list > li > div { box-shadow: none !important; background-color: #003274; border: #0a0096 !important; }
+
+li .post-meta-description { color: gray !important; }
+
+table th { background-color: #01001d; border-color: #73ff00; color: #7c7c7c; }
+
+table td { background-color: #08007c; border-color: #73ff00; color: gainsboro; }
+
+canvas { filter: invert(100%); }
+
+pre { border-color: #464646 !important; background-color: #464646; }
+
+code { background-color: #464646 !important; border-color: #464646 !important; color: #ffc800; font-family: inherit; overflow-wrap: break-word; white-space: pre-wrap; }
+
+.flash { color: #464646 !important; filter: brightness(80%); }
+
+footer { z-index: 99999; }
+
+@keyframes rainbow_animation { 0%, 100% { background-position: 0 0; }
+  50% { background-position: 100% 0; } }
+
+#Top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 99; font-size: 18px; border: none; outline: none; background-color: #3f4a4f; color: white; transition: all .2s ease-in; cursor: pointer; padding: 15px; width: 3rem; height: 3rem; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
+
+#Top:hover { background-color: #00ddff; }
+
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
