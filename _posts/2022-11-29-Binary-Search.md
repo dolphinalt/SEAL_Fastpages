@@ -11,9 +11,9 @@ Binary search is an efficient way to iterate through a ***SORTED*** list to find
 
 How exactly does this work? Lets look at these amazing ms paint drawings:
 
-![BinarySearch1.png]({{site.baseurl}}/images/BinarySearch1.png "https://github.com/dolphinalt/APCSP-Fastpages")
+![BinarySearch1.png]({{site.baseurl}}/images/BinarySearch1.png "https://github.com/dolphinalt/SEAL_Fastpages")
 
-![BinarySearch2.png]({{site.baseurl}}/images/BinarySearch2.png "https://github.com/dolphinalt/APCSP-Fastpages")
+![BinarySearch2.png]({{site.baseurl}}/images/BinarySearch2.png "https://github.com/dolphinalt/SEAL_Fastpages")
 
 *i was too lazy to make a third so ur gonna have to live with 2 :)*
 
