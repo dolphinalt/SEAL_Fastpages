@@ -445,7 +445,7 @@ button:hover { background-color: #00ddff; color: #252525; }
 
 .page-link:hover { border-radius: 25px; background-color: white; transition: all .2s ease-in; }
 
-a { color: rgba(0, 0, 0, 0.2) !important; background: #833ab4; background: linear-gradient(90deg, #833ab4 0%, red 0%, orange 20%, yellow 40%, lime 60%, blue 80%, #a020f0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; animation: rainbow_animation 6s linear; animation-iteration-count: infinite; background-size: 400% 100%; }
+a { color: rgba(0, 0, 0, 0.2) !important; background: #833ab4; background: linear-gradient(90deg, #833ab4 0%, red 0%, orange 20%, yellow 40%, lime 60%, blue 80%, #a020f0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; animation: rainbow_animation 10s linear; animation-iteration-count: infinite; background-size: 400% 100%; }
 
 a:hover { color: #00ff37 !important; text-decoration: none; }
 
@@ -480,7 +480,7 @@ code { background-color: #464646 !important; border-color: #464646 !important; c
 footer { z-index: 99999; }
 
 @keyframes rainbow_animation { 0%, 100% { background-position: 0 0; }
-  50% { background-position: 100% 0; } }
+  100% { background-position: 100% 0; } }
 
 #Top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 99; font-size: 18px; border: none; outline: none; background-color: #3f4a4f; color: white; transition: all .2s ease-in; cursor: pointer; padding: 15px; width: 3rem; height: 3rem; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
 
