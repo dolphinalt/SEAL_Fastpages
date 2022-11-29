@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Page with a binary calculator and a binary search tutorial
+description: Binary Search instruction page
 categories: [markdown]
-title: Binary Stuff
+title: Binary Search
 ---
 
 # Binary Search
