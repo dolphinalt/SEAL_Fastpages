@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -131,6 +131,17 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Algorithms can be written in different ways and still accomplish the same tasks.
+Algorithms that look similar often yield differnet outputs.
+To solve the same problem, many different algorithms can be used.</p>
+<p>Therefore, algorithms are very important for programmers, and today we're going to explore how to determine the outcome of algorithms, how to deteremine the output of similar algorithms, how to edit existing algorithms, and how to develop our own algorithms.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -274,7 +285,7 @@ window.onload = wrap_img;
 <h3 id="Editing-Algorithms">
 <a class="anchor" href="#Editing-Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing Algorithms<a class="anchor-link" href="#Editing-Algorithms"> </a>
 </h3>
-<p>Please edit the algorithm above to have it yield the same results as the previous algorithm! (no matter what temp you put in)</p>
+<p>Task: Please edit the algorithm above to have it yield the same results as the previous algorithm! (no matter what temp you put in)</p>
 
 </div>
 </div>
@@ -291,7 +302,65 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Write an algorithm in python that sums up the first 5 odd integers. You can use the following code as a starter.</p>
+<p>To develop algorithms, we first need to understand what the question is asking. Then, think about how you would approach it as a human and then try to find what pattern you went through to arrive at the answer. Apply this to code, and there you have it! An algorithm!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's say you wanted to sum up the first five integers. How would you do this in real life?
+Your thought process would probably be:</p>
+<ul>
+<li>The sum of the first integer is 1. </li>
+<li>Then, increase that integer by 1. I now add 2 to my existing sum (1). My new sum is 3.</li>
+<li>Repeat until I add 5 to my sum.
+The resulting sum is 15.</li>
+</ul>
+<p>Now let's translate this into code.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># start with a sum of 0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span> <span class="c1"># you will repeat the process five times for integers 1-5</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">i</span> <span class="c1"># add the number to your sum</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span> <span class="c1"># print the result</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Task: Write an algorithm in python that sums up the first 5 odd integers. You can use the following code as a starter.</p>
 
 </div>
 </div>
