@@ -66,7 +66,7 @@ button:hover {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 10s ease-in-out infinite;
+    animation: rainbow_animation 6s infinite;
     background-size: 400% 100%;
     position: sticky;
 }
@@ -86,7 +86,7 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 10s linear;
+    animation: rainbow_animation 6s linear;
     animation-iteration-count: infinite;
     background-size: 400% 100%;
 }
@@ -177,7 +177,7 @@ footer {
         background-position: 0 0;
     }
 
-    100% {
+    50% {
         background-position: 100% 0;
     }
 }
