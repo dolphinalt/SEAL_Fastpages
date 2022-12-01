@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Developing Algorithms",
-            "content": "if-else statements . Syntax: . if (condition) { . } else { . } .",
+            "title": "Developing Algorithms (JavaScript)",
+            "content": "if-else statements . Syntax: . if (condition) { } else { } . Conditionals vs Booleans .",
             "url": "https://dolphinalt.github.io/SEAL_Fastpages/2022/11/29/developing-algorithms-js.html",
             "relUrl": "/2022/11/29/developing-algorithms-js.html",
             "date": " • Nov 29, 2022"
