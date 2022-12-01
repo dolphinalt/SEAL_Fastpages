@@ -254,7 +254,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To analyze the sequential search algorithm, we will check for the worst case scenario, where runtime is maximized. This is because when measuring</p>
+<p>To analyze the sequential search algorithm, we will check for the worst case scenario, where runtime is maximized. This is because when measuring the efficiency of our algorithm, we want to be able to guarantee an upper limit or set amount of time for our program to finish running. To do this, we will attempt to search for the last element in the array</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ window.onload = wrap_img;
 <span class="n">s</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Index: "</span><span class="p">,</span> <span class="n">sequentialSearch</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span><span class="mi">99</span><span class="p">))</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -285,7 +285,7 @@ window.onload = wrap_img;
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>length of list:  100
 Index:  99
-Execution time: 6.842613220214844e-05 seconds
+Execution time: 0.05602836608886719 ms
 </pre>
 </div>
 </div>
@@ -307,7 +307,7 @@ Execution time: 6.842613220214844e-05 seconds
 <span class="n">s</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Index: "</span><span class="p">,</span> <span class="n">sequentialSearch</span><span class="p">(</span><span class="n">arr2</span><span class="p">,</span><span class="mi">999999</span><span class="p">))</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -322,7 +322,7 @@ Execution time: 6.842613220214844e-05 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>length of list:  1000000
 Index:  999999
-Execution time: 0.09293842315673828 seconds
+Execution time: 58.67457389831543 ms
 </pre>
 </div>
 </div>
@@ -344,7 +344,7 @@ Execution time: 0.09293842315673828 seconds
 <span class="n">s</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Index: "</span><span class="p">,</span> <span class="n">sequentialSearch</span><span class="p">(</span><span class="n">arr3</span><span class="p">,</span><span class="mi">99999999</span><span class="p">))</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -359,7 +359,7 @@ Execution time: 0.09293842315673828 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>length of list:  100000000
 Index:  99999999
-Execution time: 7.367945909500122 seconds
+Execution time: 5162.384986877441 ms
 </pre>
 </div>
 </div>
@@ -477,7 +477,7 @@ Execution time: 7.367945909500122 seconds
         <span class="k">else</span><span class="p">:</span>                               <span class="c1">#   if item is neither less than or equal to the middle of the list, this must mean that the item is on the upper half of the list</span>
             <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span><span class="o">+</span><span class="mi">1</span>                     <span class="c1">#       therefore, we set the lower bound of the search to be the first item of the upper half</span>
                                             <span class="c1"># if nothing is returned by the time the while loop ends, that means item MUST be missing from list</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>                               <span class="c1">#   therefore we tell the user that the requested item was not found</span>
+    <span class="k">return</span> <span class="kc">False</span>                            <span class="c1">#   therefore we tell the user that the requested item was not found</span>
 </pre></div>
 
     </div>
@@ -506,7 +506,7 @@ Execution time: 7.367945909500122 seconds
 <span class="n">s</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Index: "</span><span class="p">,</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span><span class="mi">99</span><span class="p">))</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -521,7 +521,7 @@ Execution time: 7.367945909500122 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>length of list:  100
 Index:  99
-Execution time: 5.340576171875e-05 seconds
+Execution time: 0.05507469177246094 ms
 </pre>
 </div>
 </div>
@@ -543,7 +543,7 @@ Execution time: 5.340576171875e-05 seconds
 <span class="n">s</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Index: "</span><span class="p">,</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr2</span><span class="p">,</span><span class="mi">999999</span><span class="p">))</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -558,7 +558,7 @@ Execution time: 5.340576171875e-05 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>length of list:  1000000
 Index:  999999
-Execution time: 6.985664367675781e-05 seconds
+Execution time: 0.17070770263671875 ms
 </pre>
 </div>
 </div>
@@ -580,7 +580,7 @@ Execution time: 6.985664367675781e-05 seconds
 <span class="n">s</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Index: "</span><span class="p">,</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">arr3</span><span class="p">,</span><span class="mi">99999999</span><span class="p">))</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -595,7 +595,7 @@ Execution time: 6.985664367675781e-05 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>length of list:  100000000
 Index:  99999999
-Execution time: 7.724761962890625e-05 seconds
+Execution time: 0.06628036499023438 ms
 </pre>
 </div>
 </div>
@@ -627,7 +627,7 @@ Execution time: 7.724761962890625e-05 seconds
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Index:  -1
+<pre>Index:  False
 </pre>
 </div>
 </div>
