@@ -151,9 +151,109 @@ window.onload = wrap_img;
 <h1 id="Conditionals-vs-Booleans">
 <a class="anchor" href="#Conditionals-vs-Booleans" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditionals vs Booleans<a class="anchor-link" href="#Conditionals-vs-Booleans"> </a>
 </h1>
+<p>Conditionals and booleans can be equivalent.</p>
+<p>For example, let's say there are two booleans: <code>rainy</code> and <code>sunny</code>.</p>
+<p>Let's look at the following code:</p>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">sunny</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> 
+<span class="nx">rainy</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">sunny</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">umbrella</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> 
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">rainy</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">umbrella</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">umbrella</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>false
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The code above is the same as below:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">umbrella</span> <span class="o">=</span> <span class="o">!</span><span class="nx">sunny</span> <span class="o">&amp;&amp;</span> <span class="nx">rainy</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">umbrella</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>false
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
