@@ -489,6 +489,40 @@ Execution time: 5162.384986877441 ms
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Likewise, we can also take a recursive approach to this problem, note the similarities</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">BinarySearchRecursion</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">lo</span> <span class="o">&gt;</span> <span class="n">hi</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">lo</span><span class="o">+</span><span class="n">hi</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+    <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">mid</span>
+    <span class="k">elif</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">BinarySearchRecursion</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">mid</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">BinarySearchRecursion</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">hi</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, let's compare the runtime with the same lists we tried with the sequential search algorithm.</p>
 
 </div>
@@ -649,7 +683,7 @@ Execution time: 0.06628036499023438 ms
 <p><strong>Problem:</strong> Given a specific integer <strong>N</strong>, return the square root of <strong>N</strong> (<strong>R</strong>) if <strong>N</strong> is a perfect square, otherwise, return the square root of <strong>N</strong> rounded down to the nearest integer</p>
 <p><strong>Input:</strong> <strong>N</strong> (Integer)</p>
 <p><strong>Output:</strong> <strong>R</strong> (Integer)</p>
-<p><strong>Constraints:</strong> Do not use any built-in math operations such as <code>sqrt(x)</code>, Try complete the problem in logarithmic time.</p>
+<p><strong>Constraints:</strong> Do not use any built-in math operations such as <code>sqrt(x)</code> or <code>x**(0.5)</code>, Try complete the problem in logarithmic time.</p>
 <p><strong>Hint 1:</strong> Maybe you can use Binary Search to try and reduce the number of checks you have to perform?</p>
 <p><strong>Hint 2:</strong> Is there a mathematical pattern amongst numbers and their square roots that could help you reduce the number of searches or iterations you must execute? Is there some value or rule you can set before applying binary search to narrow the range of possible values?</p>
 
@@ -673,23 +707,10 @@ Execution time: 0.06628036499023438 ms
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
     <span class="c1"># Write your code here</span>
+    <span class="k">return</span> <span class="kc">None</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -727,19 +748,19 @@ Execution time: 0.06628036499023438 ms
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Check number 1 passed
-Check number 2 passed
-Check number 3 passed
-Check number 4 passed
-Check number 5 passed
-Check number 6 passed
-Check number 7 passed
-Check number 8 passed
-Check number 9 passed
-Check number 10 passed
-Check number 11 passed
-Check number 12 passed
-Check number 13 passed
+<pre>Check number 1 failed
+Check number 2 failed
+Check number 3 failed
+Check number 4 failed
+Check number 5 failed
+Check number 6 failed
+Check number 7 failed
+Check number 8 failed
+Check number 9 failed
+Check number 10 failed
+Check number 11 failed
+Check number 12 failed
+Check number 13 failed
 </pre>
 </div>
 </div>
